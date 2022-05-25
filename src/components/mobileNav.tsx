@@ -11,8 +11,8 @@ const routes = [
     exact: true,
   },
   {
-    path: '/blog',
-    label: 'BLOG',
+    path: '/principles',
+    label: 'PRINCIPLES',
   },
   {
     path: '/about',
@@ -78,7 +78,7 @@ export function MobileNav() {
       </button>
       {navShow && (
         <div className="relative z-10">
-          <div className="fixed w-full h-screen bg-back-primary"></div>
+          <div className="fixed w-full h-screen text-gray-800 dark:text-gray-200 bg-white dark:bg-black"></div>
           <button
             type="button"
             className="fixed w-full h-screen cursor-auto"

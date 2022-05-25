@@ -16,17 +16,19 @@ export default function IndexPage({ posts }: IndexPageProps) {
   return (
     <Fragment>
       <SEO />
-      <div className="flex flex-col-reverse items-center mt-12 lg:flex-row lg:justify-between lg:space-x-6">
+      <div className="flex flex-col-reverse items-center mt-20 lg:flex-row lg:justify-between lg:space-x-6">
         <div className="max-w-3xl mt-12 lg:mt-0 sm:text-center md:text-center lg:text-left">
-          <p className="font-bold text-3xl tracking-tight mb-1 text-accent">
+          <p className="font-bold text-4xl mb-1 text-black dark:text-white">
           Phureewat Aphibansri
           </p>
-          <p className="text-md mb-4">
-            Payments and Blockchain Enthusiast
+          <p className="text-lg text-gray-800 dark:text-gray-200 mb-4">
+            Engineering Lead | Payments and Blockchains Enthusiast
           </p>
-          <p className="mb-16">
-            Helping developers build a faster web. Teaching about web
-            development, serverless, and React / Next.js.
+          <p className="text-gray-800 dark:text-gray-200">
+            I'm crafting meaningful software to enhance people's lives.
+          </p>
+          <p className="mb-16 text-gray-800 dark:text-gray-200 ">
+            A leader who believes in developing trust, empowering others, and continually drives and delegates the ownership.
           </p>
         </div>
         <div className="relative w-32 h-32">

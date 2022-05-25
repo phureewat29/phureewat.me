@@ -21,8 +21,8 @@ export function SEO({ title, description, blog, ogImage }: SEOProps) {
   const seo = {
     title: title || defaultTitle,
     titleTemplate: title
-      ? `${title} | ${defaultTitle}`
-      : `${defaultTitle} | Game and Web Developer`,
+      ? `${title} - ${defaultTitle}`
+      : `${defaultTitle} - Engineering Lead | Payments and Blockchains Enthusiast`,
     description: description || defaultDescription,
     image: `${siteUrl}${blog ? ogImage : image}`,
     url: `${siteUrl}`,

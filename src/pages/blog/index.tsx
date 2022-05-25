@@ -11,7 +11,7 @@ export default function Blog({ posts }: { posts: Frontmatter[] }) {
   return (
     <Fragment>
       <SEO title="Blog" />
-      <h1 className="mt-3 mb-2 text-3xl font-bold tracking-tight text-accent">
+      <h1 className="mt-3 mb-2 text-3xl font-bold  text-accent">
         Blog
       </h1>
 

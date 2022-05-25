@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -18,17 +22,16 @@
   --tw-text-opacity: 1;
 }
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
+}
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+pre::-webkit-scrollbar {
+  display: none;
+}
 
-  .full-width-container {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-  }
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

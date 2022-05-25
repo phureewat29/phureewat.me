@@ -10,20 +10,14 @@ export function Contact() {
             👋
           </span>
         </h1>
-        <p className="px-4 mt-4 text-center text-fore-secondary">
-          Feel free to email me about anything. Do you have some feedback or
-          suggestions?
-        </p>
-        <p className="px-4 mt-1 text-center text-fore-secondary">
-          You can also reach me around the web:{' '}
+        <p className="px-4 mt-2 text-gray-800 dark:text-gray-200 text-center text-fore-secondary">
+          Feel free to email me about anything or reach me around:{' '}
           <ExtLink link="https://github.com/phureewat29">GitHub</ExtLink>,{' '}
           <ExtLink link="https://twitter.com/phureewat29">Twitter</ExtLink>
         </p>
-        <div className="flex justify-center pt-10 pb-2 mx-auto">
+        <div className="flex justify-center pt-4 pb-2 mx-auto">
           <Button link="mailto:a.phureewat@gmail.com">
-            <span className="text-2xl text-back-secondary">
-              Say hello
-            </span>
+            Say hello
           </Button>
         </div>
       </div>
