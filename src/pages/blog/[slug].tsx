@@ -5,7 +5,6 @@ import { format, parseISO } from 'date-fns'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { getAllFrontMatters, getMdxBySlug } from '@/lib/mdx'
 import { SEO } from '@/components/seo'
-import { components } from '@/components/mdxComponents'
 import { QuickNav } from '@/components/quickNav'
 
 import type { Frontmatter } from '@/types/frontmatter'
@@ -70,7 +69,6 @@ export default function BlogPost({
           <h1 className="mb-10 text-4xl font-extrabold lg:text-5xl text-fore-primary">
             {frontmatter.title}
           </h1>
-          <Component components={components} />
         </article>
       </div>
     </Fragment>
