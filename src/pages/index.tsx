@@ -24,10 +24,10 @@ export default function IndexPage({ posts }: IndexPageProps) {
           <p className="text-lg text-gray-800 dark:text-gray-200 mb-4">
             Engineering Lead | Payments and Blockchains Enthusiast
           </p>
-          <p className="text-gray-800 dark:text-gray-200">
+          <p className="text-gray-700 dark:text-gray-300">
             I'm crafting meaningful software to enhance people's lives.
           </p>
-          <p className="mb-16 text-gray-800 dark:text-gray-200 ">
+          <p className="mb-16 text-gray-700 dark:text-gray-300 ">
             A leader who believes in developing trust, empowering others, and continually drives and delegates the ownership.
           </p>
         </div>
