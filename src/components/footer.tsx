@@ -15,7 +15,7 @@ const routes = [
 export function Footer() {
   return (
     <footer className="relative w-full h-56 overflow-hidden bg-back-secondary text-secondary">
-      <div className="container h-full px-5 pt-24 pb-12 m-auto md:max-w-screen-md lg:max-w-screen-lg md:px-20">
+      <div className="container h-full px-5 pt-24 pb-12 m-auto max-w-2xl md:px-20">
         <div className="container flex-col justify-between md:space-y-8">
           <nav className="flex-row items-center justify-center hidden space-x-6 text-sm lg:flex md:justify-end">
             {routes.map(route => (

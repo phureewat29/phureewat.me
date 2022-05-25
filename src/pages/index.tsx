@@ -17,19 +17,19 @@ export default function IndexPage({ posts }: IndexPageProps) {
     <Fragment>
       <SEO />
       <div className="flex flex-col-reverse items-center mt-12 lg:flex-row lg:justify-between lg:space-x-6">
-        <div className="max-w-3xl mt-12 lg:mt-0 sm:text-left md:text-center lg:text-left">
-          <p className="font-bold text-2xl md:text-5xl tracking-tight mb-1 text-accent">
+        <div className="max-w-3xl mt-12 lg:mt-0 sm:text-center md:text-center lg:text-left">
+          <p className="font-bold text-3xl tracking-tight mb-1 text-accent">
           Phureewat Aphibansri
           </p>
-          <p className="text-xl mb-4">
+          <p className="text-md mb-4">
             Payments and Blockchain Enthusiast
           </p>
-          <p className="mb-16 max-w-xl">
+          <p className="mb-16">
             Helping developers build a faster web. Teaching about web
             development, serverless, and React / Next.js.
           </p>
         </div>
-        <div className="relative">
+        <div className="relative w-32 h-32">
           <div className="top-0 flex items-center justify-center w-full h-full">
             <div className="w-32 h-32 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-48 lg:w-48">
               <Image

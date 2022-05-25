@@ -21,7 +21,6 @@ npm run dev
 ## Configuration
 
 - MDX - located in `content/blog`
-- Analytics - I'm using [GoatCounter](https://www.goatcounter.com/). If you want to remove or replace it, remove/replace the `goat-counter` script in`_document.tsx` and `useAnalytics`.
 
 ## License
 

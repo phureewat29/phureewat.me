@@ -59,7 +59,7 @@ export const Button = ({
     <a
       {...props}
       className={classNames(
-        'px-20 py-2 rounded bg-gradient-to-r from-teal-500 to-blue-500 bg-200 bg-left hover:bg-right transition-all text-back-secondary duration-[0.5s] ease-out focus-visible:outline-accent focus:text-accent',
+        'px-20 py-2 rounded bg-gradient-to-r from-green-500 to-blue-500 bg-200 bg-left hover:bg-right transition-all text-back-secondary duration-[0.5s] ease-out focus-visible:outline-accent focus:text-accent text-white',
         className
       )}
       href={link}

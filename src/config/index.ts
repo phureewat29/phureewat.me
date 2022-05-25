@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: `Phureewat Aphibansri`,
-  description: `Phureewat Aphibansri is a game and javascript developer`,
+  description: `Phureewat is payments and blockchains Enthusiast`,
   author: `Phureewat Aphibansri`,
   siteUrl:
     process.env.NODE_ENV === 'development'

@@ -1,57 +1,101 @@
-const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const { spacing, fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: [
-      './src/pages/**/*.{js,ts,jsx,tsx}',
-      './src/components/**/*.{js,ts,jsx,tsx}',
-    ],
-  },
+  darkMode: 'class',
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       colors: {
-        accent: 'var(--color-accent)',
-        fore: {
-          primary: 'var(--color-fore-primary)',
-          secondary: 'var(--color-fore-secondary)',
-          subtle: 'var(--color-fore-subtle)',
+        'blue-opaque': 'rgb(13 42 148 / 18%)',
+        gray: {
+          0: '#fff',
+          100: '#fafafa',
+          200: '#eaeaea',
+          300: '#999999',
+          400: '#888888',
+          500: '#666666',
+          600: '#444444',
+          700: '#333333',
+          800: '#222222',
+          900: '#111111',
         },
-        back: {
-          primary: 'var(--color-back-primary)',
-          secondary: 'var(--color-back-secondary)',
-          subtle: 'var(--color-back-subtle)',
-          accent: 'var(--color-back-accent)',
-        },
-        teal: colors.teal,
       },
       fontFamily: {
-        sans: ['Inter', ...fontFamily.sans],
-        mono: ['Fira Code', ...fontFamily.mono],
+        sans: ['IBM Plex Sans', ...fontFamily.sans],
       },
-      letterSpacing: {
-        widestest: '0.2em',
-      },
-      backgroundSize: {
-        200: '150%',
-      },
-      outline: {
-        accent: ['2px dotted var(--color-accent)', '2px'],
-      },
-      animation: {
-        'blob-spin': 'blobbing 25s linear infinite',
-      },
-      keyframes: {
-        blobbing: {
-          from: {
-            transform: 'rotate(0deg)',
-          },
-          to: {
-            transform: 'rotate(360deg)',
+      typography: theme => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.700'),
+            a: {
+              color: theme('colors.blue.500'),
+              '&:hover': {
+                color: theme('colors.blue.700'),
+              },
+              code: { color: theme('colors.blue.400') },
+            },
+            'h2,h3,h4': {
+              'scroll-margin-top': spacing[32],
+            },
+            thead: {
+              borderBottomColor: theme('colors.gray.200'),
+            },
+            code: { color: theme('colors.pink.500') },
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:last-of-type::after': false,
           },
         },
-      },
+        dark: {
+          css: {
+            color: theme('colors.gray.200'),
+            a: {
+              color: theme('colors.blue.400'),
+              '&:hover': {
+                color: theme('colors.blue.600'),
+              },
+              code: { color: theme('colors.blue.400') },
+            },
+            blockquote: {
+              borderLeftColor: theme('colors.gray.700'),
+              color: theme('colors.gray.300'),
+            },
+            'h2,h3,h4': {
+              color: theme('colors.gray.100'),
+              'scroll-margin-top': spacing[32],
+            },
+            hr: { borderColor: theme('colors.gray.700') },
+            ol: {
+              li: {
+                '&:before': { color: theme('colors.gray.500') },
+              },
+            },
+            ul: {
+              li: {
+                '&:before': { backgroundColor: theme('colors.gray.500') },
+              },
+            },
+            strong: { color: theme('colors.gray.100') },
+            thead: {
+              th: {
+                color: theme('colors.gray.100'),
+              },
+              borderBottomColor: theme('colors.gray.600'),
+            },
+            tbody: {
+              tr: {
+                borderBottomColor: theme('colors.gray.700'),
+              },
+            },
+          },
+        },
+      }),
     },
   },
+  variants: {
+    typography: ['dark'],
+  },
+  plugins: [require('@tailwindcss/typography')],
 }
