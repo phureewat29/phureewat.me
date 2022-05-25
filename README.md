@@ -18,10 +18,6 @@ npm install
 npm run dev
 ```
 
-## Configuration
-
-- MDX - located in `content/blog`
-
 ## License
 
 This project is open source and available under the [MIT License](LICENSE)
