@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://phureewat.me/sitemap.xml
