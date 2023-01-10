@@ -1,11 +1,11 @@
 ---
-import { SITE } from "~/config.mjs";
-import Layout from "~/layouts/PageLayout.astro";
+import {SITE} from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
 
 const title = `Error 404 — ${SITE.name}`;
 ---
 
-<Layout meta={{ title }}>
+<Layout meta={{title}}>
 	<section
 		class="flex items-center h-[calc(100vh-104px)] md:h-[calc(100vh-130px)]"
 	>
@@ -17,7 +17,7 @@ const title = `Error 404 — ${SITE.name}`;
 					<span class="sr-only">Error</span>
 					<span
 						class="bg-clip-text text-transparent bg-gradient-to-r from-primary-100 to-secondary-300"
-						>404</span
+					>404</span
 					>
 				</h2>
 				<p class="text-2xl font-semibold md:text-2xl">
