@@ -106,13 +106,6 @@
   dependencies:
     prismjs "^1.28.0"
 
-"@astrojs/rss@^1.0.2":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-1.2.1.tgz#e53b7b5e9403c6e026f607e4c4b5f14baf5d645a"
-  integrity sha512-ZgCunS6ECuPpxBznBYE+ONf23rcp+OWZ5IyDKFAcVZCWEq8Bh0rVYa9p8u6cU9WOTK56JRQTuwcVZYndmExNtw==
-  dependencies:
-    fast-xml-parser "^4.0.8"
-
 "@astrojs/sitemap@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@astrojs/sitemap/-/sitemap-1.0.0.tgz#d5e7360e08f8f3b17bb1b8faa4c882aa39d18c25"
@@ -619,13 +612,6 @@
   dependencies:
     tsm "^2.1.4"
 
-"@tailwindcss/forms@^0.5.3":
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.5.3.tgz#e4d7989686cbcaf416c53f1523df5225332a86e7"
-  integrity sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==
-  dependencies:
-    mini-svg-data-uri "^1.2.3"
-
 "@tailwindcss/typography@^0.5.7":
   version "0.5.8"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.8.tgz#8fb31db5ab0590be6dfa062b1535ac86ad9d12bf"
@@ -818,7 +804,7 @@
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.0.tgz#0c60e537fa790f5f9472ed2776c2b71ec117351b"
   integrity sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==
 
-"@typescript-eslint/eslint-plugin@*":
+"@typescript-eslint/eslint-plugin@^5.35.1":
   version "5.48.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.48.1.tgz#deee67e399f2cb6b4608c935777110e509d8018c"
   integrity sha512-9nY5K1Rp2ppmpb9s9S2aBiF3xo5uExCehMDmYmmFqqyxgenbHJ3qbarcLt4ITgaD6r/2ypdlcFRdcuVPnks+fQ==
@@ -833,7 +819,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@*", "@typescript-eslint/parser@^5.39.0":
+"@typescript-eslint/parser@^5.35.1", "@typescript-eslint/parser@^5.39.0":
   version "5.48.1"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.48.1.tgz#d0125792dab7e232035434ab8ef0658154db2f10"
   integrity sha512-4yg+FJR/V1M9Xoq56SF9Iygqm+r5LMXvheo6DQ7/yUWynQ4YfCRnsKuRgqH4EQ5Ya76rVwlEpw4Xu+TgWQUcdA==
@@ -2088,10 +2074,10 @@ eslint-config-prettier@^8.5.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.6.0.tgz#dec1d29ab728f4fa63061774e1672ac4e363d207"
   integrity sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==
 
-eslint-config-xo-typescript@*:
-  version "0.55.1"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo-typescript/-/eslint-config-xo-typescript-0.55.1.tgz#8b0e776af47fad68ac4eb3a7385b7d3b46133b83"
-  integrity sha512-iXua+7n9fOp7LzGzvXlcZG0w6cdtscjASGTrAHMj0Rn9voayxF2oRoMIK1QS6ZJb4fMVEQZdU2D6gTKmWhcCQQ==
+eslint-config-xo-typescript@^0.53.0:
+  version "0.53.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo-typescript/-/eslint-config-xo-typescript-0.53.2.tgz#0880e84a2ce791120bc40b0b39c702fed71c125d"
+  integrity sha512-yi910dDnKq7uLssrhcwI6fj0vnpk//qTx1dbUOTmMm1DctOrNImYeepJYq6/BQdvVL5VKkQiQLHaJnZWcACG9g==
 
 eslint-config-xo@^0.42.0:
   version "0.42.0"
@@ -2509,13 +2495,6 @@ fast-levenshtein@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
-
-fast-xml-parser@^4.0.8:
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-4.0.13.tgz#dab3e7ea17d39805af0a9f6d041f4c975c2b9b58"
-  integrity sha512-g+OboAw8ol1FgTHhKLR7ZHcItNudceiY04BBrvqa0JBWoPhi/+e5r4H5AeW+EsQCroJLJwsuOP3dD3c6cc5uOg==
-  dependencies:
-    strnum "^1.0.5"
 
 fastq@^1.6.0:
   version "1.15.0"
@@ -4265,11 +4244,6 @@ min-indent@^1.0.0, min-indent@^1.0.1:
   resolved "https://registry.yarnpkg.com/min-indent/-/min-indent-1.0.1.tgz#a63f681673b30571fbe8bc25686ae746eefa9869"
   integrity sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==
 
-mini-svg-data-uri@^1.2.3:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.4.tgz#8ab0aabcdf8c29ad5693ca595af19dd2ead09939"
-  integrity sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==
-
 minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -5567,11 +5541,6 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==
-
-strnum@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/strnum/-/strnum-1.0.5.tgz#5c4e829fe15ad4ff0d20c3db5ac97b73c9b072db"
-  integrity sha512-J8bbNyKKXl5qYcR36TIO8W3mVGVHrmmxsd5PAItGkmyzwJvybiw2IVq5nqd0i4LSNSkB/sx9VHllbfFdr9k1JA==
 
 style-to-object@^0.3.0:
   version "0.3.0"

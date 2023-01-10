@@ -1,29 +1,29 @@
 ---
-import { AstroSeo } from "@astrolib/seo";
-import { getRelativeUrlByFilePath } from "~/utils/directories.js";
-import { SITE } from "~/config.mjs";
+import {AstroSeo} from '@astrolib/seo';
+import {getRelativeUrlByFilePath} from '~/utils/directories.js';
+import {SITE} from '~/config.mjs';
 
 const {
 	title = SITE.name,
-	description = "",
+	description = '',
 	image: _image,
 	noindex = false,
 	nofollow = false,
 	ogTitle = title,
-	ogType = "website",
+	ogType = 'website',
 	appStoreId,
 } = Astro.props;
 
 const image =
-	typeof _image === "string"
+	typeof _image === 'string'
 		? new URL(_image, Astro.site)
-		: _image && typeof _image.src !== "undefined"
-		? new URL(getRelativeUrlByFilePath(_image.src), Astro.site)
-		: null;
+		: (_image && typeof _image.src !== 'undefined'
+			? new URL(getRelativeUrlByFilePath(_image.src), Astro.site)
+			: null);
 
 const canonicalURL = new URL(
-	Astro.url.pathname.replace(/\.html$/, ""),
-	Astro.site
+	Astro.url.pathname.replace(/\.html$/, ''),
+	Astro.site,
 ).toString();
 ---
 
@@ -52,12 +52,6 @@ const canonicalURL = new URL(
 		description,
 		url: canonicalURL,
 		type: ogType,
-		images: image
-			? [
-					{
-						url: image.toString(),
-					},
-			  ]
-			: undefined,
+		images: image ? [{url: image.toString()}] : undefined,
 	}}
 />
