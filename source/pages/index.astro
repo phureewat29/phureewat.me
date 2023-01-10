@@ -1,0 +1,15 @@
+---
+import {SITE} from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const meta = {
+	title: SITE.title,
+	description: SITE.description,
+};
+---
+
+<Layout {meta}>
+	<Hero/>
+</Layout>
+<script src="https://app.embed.im/snow.js" defer></script>
