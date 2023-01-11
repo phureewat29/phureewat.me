@@ -4,5 +4,5 @@ export const SITE = {
 	origin: 'https://phureewat.me',
 	basePathname: '/',
 	title: 'Phureewat A',
-	description: 'A man with passion in Fintech who enjoy crafting meaningful software to enhance people\'s lives',
+	description: 'A man with passion about crafting meaningful software to enhance people\'s lives.',
 };
