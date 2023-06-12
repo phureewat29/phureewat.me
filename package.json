@@ -8,6 +8,7 @@
 		"start": "astro dev",
 		"build": "xo && astro build",
 		"preview": "astro preview",
+		"lint": "xo --fix",
 		"test": "xo"
 	},
 	"devDependencies": {

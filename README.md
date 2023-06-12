@@ -1,6 +1,6 @@
 # [phureewat.me](https://phureewat.me)
 
-> My personal website
+> Phureewat's personal website
 
 ## License
 
